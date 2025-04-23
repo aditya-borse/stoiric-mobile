@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "stoiric-mobile",
+    "name": "Stoiric",
     "slug": "stoiric-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/stoiric-logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/stoiric-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/stoiric-logo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.adityab29.stoiricmobile",
+      "navigationBarColor": "#18181b"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d6d7bf34-2848-4a7f-9d3b-60553a66f993"
+      }
     }
   }
 }
