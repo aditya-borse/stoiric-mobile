@@ -247,3 +247,19 @@ export const clearAllData = async (): Promise<void> => {
         console.error('Failed to clear AsyncStorage.', e);
     }
 };
+
+export const getSpecificDateData = async (dateStr: string): Promise<DailyData | null> => {
+    const key = `stoiric_${dateStr}`;
+    try {
+        const jsonValue = await AsyncStorage.getItem(key);
+        if (jsonValue != null) {
+            return JSON.parse(jsonValue) as DailyData;
+        } else {
+            console.log(`No data found for specific date key: ${key}`);
+            return null;
+        }
+    } catch (e) {
+        console.error(`Failed to fetch data for key ${key}`, e);
+        return null;
+    }
+};
