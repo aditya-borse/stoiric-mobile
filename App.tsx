@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import HomeScreen from './src/screens/HomeScreen';
 import type { RootStackParamList } from './src/screens/HomeScreen'; 
+import NewDayScreen from './src/screens/NewDayScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -28,6 +29,11 @@ export default function App() {
           name="Home" 
           component={HomeScreen} 
           options={{ title: '' }} 
+        />
+        <Stack.Screen 
+          name="NewDay"
+          component={NewDayScreen}
+          options={{ title: '' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
