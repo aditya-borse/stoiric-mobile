@@ -352,7 +352,8 @@ const NewDayScreen: React.FC<Props> = ({ navigation }) => {
                         onPress={() => setShowNewGoal(true)}
                         style={styles.footerButton}
                     >
-                        <MaterialCommunityIcons name="plus-circle-outline" size={20} color="#f4f4f5" />
+                        
+                        
                         <Text style={styles.footerButtonText}>Add Goal</Text>
                     </TouchableOpacity>
                 )}
@@ -395,7 +396,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
     },
     headerButtonText: {
-        color: '#f59e0b',
+        color: '#f4f4f5',
         fontSize: 16,
         fontWeight: '500',
     },
