@@ -2,6 +2,9 @@
 
 This is the mobile client for [Stoiric](https://stoiric.vercel.app), a minimalist daily journaling app that helps you track your goals, reflect on your day, and measure your personal growth.
 
+## Video Demo
+[Here on youtube](https://youtube.com/shorts/8BuFvo6uyXs?si=2_JaF5VqExtflY3i)
+
 ## Tech Stack
 
 *   React Native
